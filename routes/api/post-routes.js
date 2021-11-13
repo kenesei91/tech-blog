@@ -9,7 +9,7 @@ router.get("/", (req, res) => {
     include: [
       {
         model: User,
-        attributes: ["username"],
+        attributes: ["username"]
       },
     ],
   })
@@ -50,7 +50,7 @@ router.post("/", (req, res) => {
   // expects {title: 'Taskmaster goes public!', content: 'world regional press', user_id: 1}
   Post.create({
     title: req.body.title,
-    content: req.body.post_url,
+    content: req.body.content,
     user_id: req.body.user_id,
   })
     .then((dbPostData) => res.json(dbPostData))
