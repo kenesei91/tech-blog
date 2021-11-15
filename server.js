@@ -9,14 +9,14 @@ const sequelize = require('./config/connection');
 //Loads the handlebars module
 const exphbs = require('express-handlebars');
 
-// use as template engine for our html
-const hbs = exphbs.create({});
 
 // allows us to connect to the back end
 const session = require('express-session');
 
 // Creates our express server
 const app = express();
+
+
 // set to work with heroku
 const PORT = process.env.PORT || 3001;
 
@@ -34,6 +34,11 @@ const sess = {
 };
 
 app.use(session(sess));
+
+const helpers = require('./utils/helpers');
+
+// use as template engine for our html
+const hbs = exphbs.create({helpers});
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
