@@ -38,7 +38,10 @@ This application allows employers to view and manage the departments such as pro
 - [Github Repository](https://github.com/kenesei91/tech-blog)
 
 ** This project has been deployed to Heroku
- [Heroku] (https://dashboard.heroku.com/apps/peaceful-falls-97992)
+- [Heroku] (https://dashboard.heroku.com/apps/peaceful-falls-97992)
+
+- [Demo Walkthrough] (https://watch.screencastify.com/v/X6JbmnHWwSOSWYrgM958)
+ 
 
 ## Walkthrough demos
 
